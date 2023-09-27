@@ -1,0 +1,156 @@
+:root{
+    --clr-cprimary:#FFF;
+    --clr-csecondary: #393e46;
+    --clr-tittle:#454545;
+    --clr-txt:black;
+    --clr-btn:#454545;
+    --clr-btnhover:#707070;
+    --clr-txt-p:#000;
+
+
+}
+
+.carousel *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.carousel{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    
+}
+
+.card-slider{
+    border-radius:25px;
+    background-color:var(--clr-cprimary);
+    
+}
+
+.card-image{
+    position:relative;
+    height:150px;
+    width: 150px;
+    border-radius:50%;
+    background:var(--clr-cprimary);
+    padding: 3px;
+}
+
+
+.card-image .card-img{
+
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius:50%;
+    border: 4px solid var(--clr-csecondary);   
+}
+
+
+.slide-content{
+margin: 35px 28px;
+overflow:hidden;
+}
+
+.image-content,
+.card-content{
+display:flex;
+padding: 10px 14px;
+flex-direction:column;
+align-items:center;
+}
+
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+    
+}
+
+.name{
+    font-size:18px;
+    font-weight:500;
+    color:var(--clr-tittle);
+}
+
+.description{
+ font-size:14px;
+ color:var(--clr-txt);
+ text-align:center;
+ margin-top: 7px;
+}
+
+.overlay{
+    position:absolute;
+    height:100%;
+    width:100%;
+    background-color:var(--clr-csecondary);
+    left:0;
+    top:0;
+    border-radius: 25px 25px 0 25px; 
+}
+
+.overlay::before,
+.overlay::after{
+    content:'';
+    position:absolute;
+    right:0;
+    bottom:-40px;
+    height:40px;
+    width:40px;
+    background-color:var(--clr-csecondary);
+}
+
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color:#fff;
+}
+
+.slide-container{
+    max-width:1120px;
+    width:100%;
+    background-color:rgba(222, 226, 230, 0.75);
+    padding: 40px;
+    border-radius:10px;
+}
+
+.darkmode {
+    --clr-txt:#fdffc4;
+}
+
+.darkmode .description{
+    color:var(--clr-txt-p);
+}
+
+.darkmode *.card-content{
+    color:var(--clr-txt-p);
+}
+
+.swiper-navBtn{
+--swiper-navigation-color:var(--clr-btn);  
+}
+
+.swiper-navBtn:hover{
+    color:var(--clr-btnhover);  
+  }
+
+.swiper-button-next{
+    right:0;
+}
+
+.swiper-button-prev{
+    left:0;
+}
+
+
+@media screen and (max-width:768){
+    .slide-content{
+      margin: 0 10px;  
+    }
+    .swiper-navBtn{
+        display:none;
+    }
+} 

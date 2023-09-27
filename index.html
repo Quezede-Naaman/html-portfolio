@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--CSS-->
+  <link rel="stylesheet" href="Css/index.css" />
+  <link rel="stylesheet" href="Css/carousel.css" />
+  <link rel="stylesheet" href="css/swiper.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <!--Font Google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  <title>Portifolio</title>
+</head>
+
+<body>
+  <!--Cabeçalho-->
+  <header id="header">
+    <button onclick="openSidebar()" class="btn-header">
+      <i class="bi bi-list"></i>
+    </button>
+
+    <div>
+      <!--logo-->
+      <div class="logo-header">
+        <img src="images/LogoQn.png" class="logo-header" alt="Logo-Header" />
+      </div>
+    </div>
+
+    <!--Itens de menu do Cabeçalho-->
+    <nav class="navigation-header" id="navigation_header">
+      <button onclick="openSidebar()" class="btn-header">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <a href="#sobre-mim">Sobre mim</a>
+      <a href="#Conhecimentos">Conhecimentos</a>
+      <a href="#h2-projects">Projetos</a>
+      <a href="cursos.html" target="_blank">Cursos</a>
+    </nav>
+  </header>
+
+  <div id="fist-line">
+    <!--Dark-mode-->
+    <button id="dark-mode-toggle" class="dark-mode-toggle">
+      <i class="bi bi-brightness-low-fill"></i>
+    </button>
+    <div>
+      <h1>Desenvolvedor Web</h1>
+    </div>
+  </div>
+
+  <!-- Inicio do Corpo da Pagina-->
+  <section tabindex="0" onclick="closeSidebar()" class="content" id="content">
+
+    <div class="card">
+      <div class="img-box">
+        <img src="Images/Avatar.png" class="img-myself" />
+      </div>
+      <div class="content-card">
+        <p class="p-dark">
+          Amo fazer designers responsivos,criativos além de adorar programar.
+          <br>Vivo em constante aprendizado por meio de estudos constantes e prática buscando sempre aperfeiçoar e
+          implementar meus conhecimentos.
+        </p>
+        <a href="https://www.linkedin.com/in/quezede-nascimento-857589167/" target="_blank" class="read-more">
+          <i class="bi bi-linkedin"></i>
+          Linkedin
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!--Segunda sessão da página-->
+  <section onclick="closeSidebar()">
+    <!--Meus projetos-->
+    <h2 id="h2-projects">Meus projetos</h2>
+    <ul class="ul-projects">
+      <li><button class="btnList"><a href=".\Projects\Jogo-memoria\JgMemoria.html"
+            target="_blank">Projeto-1</a></button></li>
+      <li><button class="btnList"><a href="#">Projeto-(em processo)</a></button></li>
+    </ul>
+    <div class="content-projects" id="content-projects"></div>
+    </div>
+
+    <!--Sobre mim-->
+    <div class="sobre-mim" id="sobre-mim">
+      <h2>Sobre mim:</h2>
+      <p>Profissional bilíngue (Inglês-Avançado) com mais de 6 anos de experiencia na area de Tecnologia da
+        Informação.<br>
+        Graduado em Ciências da computação e que busca aprendizado constante, forte background em infraestrutura e
+        apaixonado por programação Web,<br>
+        ao que venho me dedicando nos ultimos anos.
+      </p>
+    </div>
+
+    <!--Carrossel Frameworks e Bibliotécas-->
+    <section class="carousel">
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+
+            <!--Card Slide-->
+            <div class="card-slider swiper-slide" id="Conhecimentos">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="Images/imgReact.png" alt="Image Node" class="card-img">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2>React</h2>
+                <p class="description">O React é uma biblioteca front-end JavaScript de código aberto com foco em criar
+                  interfaces de usuário em páginas web.Possibilita o desenvolvimento de aplicativos para Android e iOS
+                  utilizando componentes de interface de usuário nativos de ambas plataformas, sem precisar recorrer ao
+                  HTML.</p>
+              </div>
+            </div>
+
+            <!--Card Slide-->
+            <div class="card-slider swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="Images/imgJs.png" alt="Image Node" class="card-img">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2>JavaScript</h2>
+                <p class="description">JavaScript é uma linguagem de programação interpretada estruturada, de script em
+                  alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma
+                  das três principais tecnologias da World Wide Web.</p>
+              </div>
+            </div>
+
+            <!--Card Slide-->
+            <div class="card-slider swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="Images/imgJq.png" alt="Image Node" class="card-img">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2>JQuery</h2>
+                <p class="description">jQuery é uma biblioteca livre que contém funções da linguagem de programação
+                  JavaScript que interage com páginas em HTML, <br>desenvolvida para simplificar os scripts
+                  executados/interpretados no navegador de internet do usuário.</p>
+              </div>
+            </div>
+
+            <!--Card Slide-->
+            <div class="card-slider swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="Images/imgNode.png" alt="Image Node" class="card-img">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2>Node.JS</h2>
+                <p class="description">Node.js é um software de código aberto, multiplataforma, baseado no interpretador
+                  V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web.<br> A principal
+                  característica do Node.js é sua arquitetura assíncrona e orientada por eventos.</p>
+              </div>
+            </div>
+
+            <!--Card Slide-->
+            <div class="card-slider swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="Images/sql-and-mysql.png" alt="Image Node" class="card-img">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2>Sql / Mysql</h2>
+                <p class="description">“Structured Query Language” (Linguagem de Consulta Estruturada). Linguagem padrão
+                  para manipulação de registros em bancos de dados relacionais.<br> Possuo domínio tanto em Sql-server
+                  quanto em Mysql.
+                </p>
+              </div>
+            </div>
+
+            <!--Card Slide-->
+            <div class="card-slider swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="Images/imgBootsrap.png" alt="Image Node" class="card-img">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2>Bootsrap</h2>
+                <p class="description">Bootstrap é um framework web com código-fonte aberto para desenvolvimento de
+                  componentes de interface e front-end para sites e aplicações web, usando HTML, CSS e JavaScript,
+                  baseado em modelos de design para a tipografia, melhorando a experiência do usuário em um site
+                  amigável e responsivo.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!--Cursos-->
+    <div class="div-cursos">
+        <a href="cursos.html" target="_blank" class="cursos">
+          <h2 id="cursos">Cursos</h2>
+        </a>
+    </div>
+
+  </section>
+  <!--Java Script-->
+  <script src="Js/index.js" defer></script>
+  <script src="Js/darkmode.js"></script>
+  <script src="JS/swiper.js"></script>
+  <script src="js/code-swiper.js"></script>
+</body>
+<!--Rodapé-->
+<footer>
+  <div class="footer_content">
+    <div class="title-contact">
+      <h3>Contatos</h3>
+    </div>
+    <div class="footer_contacts">
+      <div class="footer_social_media">
+        <a href="#" class="footer-link">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="#" class="footer-link">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer_copyright">
+    &#169
+    2023 all rights reserved
+  </div>
+</footer>
+
+</html>

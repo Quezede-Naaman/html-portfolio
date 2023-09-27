@@ -1,0 +1,36 @@
+body{
+    background-color:white;
+    background-image: url(/images/Bkg-curso.jpg);
+}
+
+h1{
+    text-align: center;
+    margin-bottom:10px;
+    clear:both;
+}
+
+h2{
+    clear:both;
+    margin:0;
+}
+
+.card img{
+    margin: 10px 15px;
+    width:50%;
+    float:left;
+}
+
+p{
+    margin-left: 10px;
+}
+
+   @media (max-width: 680px) {
+    .card img{
+        width:100%;
+        display:block;
+        margin-bottom:30px;
+        text-align: justify;
+    }
+
+
+  }
