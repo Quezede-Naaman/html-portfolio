@@ -22,7 +22,7 @@ html {
   box-sizing: border-box;
   transition: 0.3s;
   background-color: var(--clr-light);
-  background-image: url(../Images/Bkg-black.jpg);
+  background-image: url(../Images/Background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -37,7 +37,7 @@ html {
   --background: var(--clr-dark);
 
   color: var(--clr-txt);
-  background-image: url(/Images/Bkg-black.jpg);
+  background-image: url(../Images/Bkg-black.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
